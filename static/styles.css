@@ -1,0 +1,147 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+.page-wrapper {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh; 
+}
+
+body {
+  font-family: 'Merriweather Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fffaff;
+}
+
+header {
+  width: 100vw;
+  margin: 15px 0;
+  display: flex;
+  align-items: center;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 5vh;
+}
+
+nav {
+  width: 100%;
+  margin: 15px 5px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+
+nav ul li {
+  position: relative;
+}
+
+nav a {
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 90%;
+  background-color: #1a1c27;
+  color: #fffaff;
+  padding: 10px 20px;
+  display: block;
+  transition: color 0.3s;
+}
+
+.cat-ear {
+  content: '';
+  position: absolute;
+  top: -15px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 15px 25px 10px;
+  border-color: transparent transparent #1a1c27 transparent;
+}
+
+.left-ear {
+  left: 7px;
+  transform: rotate(-20deg);
+}
+
+.right-ear {
+  right: 7px;
+  transform: rotate(20deg);
+}
+
+nav a:hover {
+  color: #f0bddc;
+}
+
+main {
+  padding: 20px;
+}
+
+
+
+@media (max-width: 600px) {
+  nav ul {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .logo {
+      height: 7vh;
+  }
+}
+
+footer {
+  background-color: #1a1c27; 
+  padding: 15px 0;
+  text-align: center;
+  color: #fffaff; 
+  
+}
+
+footer .social-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+footer .social-links a {
+  color: #fffaff;
+  text-decoration: none;
+  font-size: 1em;
+  transition: color 0.3s;
+}
+
+footer .social-links a:hover {
+  color: #f0bddc;
+}
+
+footer .social-links a::before {
+  content: ''; 
+  display: inline-block;
+  width: 24px; 
+  height: 24px;
+  margin-right: 8px;
+  vertical-align: middle;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+footer .social-links a[href*="facebook"]::before {
+  background-image: url('../static/asset/images/facebook-icon.svg'); 
+}
+
+footer .social-links a[href*="instagram"]::before {
+  background-image: url('../static/asset/images/instagram-icon.svg'); 
+}

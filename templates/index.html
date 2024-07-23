@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="../static/asset/images/Icon.svg"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@300;400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Adote seu Humano</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='resetCss.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='styles.css') }}"
+    />
+  </head>
+  <body>
+    <div class="page-wrapper">
+      <header>
+        <nav>
+          <ul>
+            <li>
+              <span class="cat-ear left-ear"></span>
+              <a class="merriweather-sans-semibold" href="#" data-section="home"
+                >Home</a
+              >
+              <span class="cat-ear right-ear"></span>
+            </li>
+            <li>
+              <span class="cat-ear left-ear"></span>
+              <a
+                class="merriweather-sans-semibold"
+                href="#"
+                data-section="sobre"
+                >Sobre</a
+              >
+              <span class="cat-ear right-ear"></span>
+            </li>
+            <div class="logo-container">
+              <img
+                class="logo"
+                src="../static/asset/images/Icon.svg"
+                alt="Logo do Site"
+              />
+            </div>
+            <li>
+              <span class="cat-ear left-ear"></span>
+              <a
+                class="merriweather-sans-semibold"
+                href="#"
+                data-section="servicos"
+                >Serviços</a
+              >
+              <span class="cat-ear right-ear"></span>
+            </li>
+            <li>
+              <span class="cat-ear left-ear"></span>
+              <a
+                class="merriweather-sans-semibold"
+                href="#"
+                data-section="contato"
+                >Contato</a
+              >
+              <span class="cat-ear right-ear"></span>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main id="main-content">
+        <!-- Conteúdo dinâmico será carregado aqui -->
+      </main>
+      <footer>
+        <div class="social-links">
+          <a
+            target="_blank"
+            href="https://www.facebook.com/groups/1649523118675276/"
+            >Facebook</a
+          >
+          <a
+            target="_blank"
+            href="https://www.instagram.com/gatosanonimosfloripa/"
+            >Instagram</a
+          >
+        </div>
+      </footer>
+    </div>
+    <script defer src="{{ url_for('static', filename='script.js') }}"></script>
+  </body>
+</html>
