@@ -14,7 +14,7 @@ def get_owners():
     data = response.json()
     owners = [
         {
-            "name": f"{person['name']['first']} {person['name']['last']}",
+            "name": f"{person['name']['first']}",
             "email": person['email'],
             "img": person['picture']['thumbnail']
         }
