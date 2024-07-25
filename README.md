@@ -34,7 +34,6 @@ Passo a Passo
 Clone o repositório:
 
 bash
-Copy code
 git clone https://github.com/white-reis/prova-pratica-desenvolvedor-front-end-gabriel.git
 cd prova-pratica-desenvolvedor-front-end-gabriel
 Crie um ambiente virtual e ative-o:
@@ -48,12 +47,10 @@ source .venv/bin/activate
 Instale as dependências:
 
 bash
-Copy code
 pip install -r requirements.txt
 Execute o aplicativo Flask:
 
 bash
-python app.py
 Acesse a aplicação no navegador:
 Abra o navegador e vá para http://127.0.0.1:5000 para ver a aplicação em execução.
 
