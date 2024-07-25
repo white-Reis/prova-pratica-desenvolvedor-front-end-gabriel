@@ -65,5 +65,5 @@ Para mais informações ou dúvidas, entre em contato pelo e-mail: Dev.fabio.rei
 
 Sinta-se à vontade para ajustar qualquer parte da descrição conforme necessário!
 
-Modelo de dsegin: 
+Modelo de design: 
 https://www.figma.com/design/Hm3eEbwIFH0iKEz1cSAzZ5/Untitled?m=auto&t=6HTEeyPgbzeyUEaA-1
